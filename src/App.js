@@ -7,6 +7,8 @@ import Login from './Pages/Login/Login/Login';
 import NotFound from './Pages/NotFound/NotFound';
 import Header from './Pages/Shred/Header/Header';
 import PrivateRoute from './Pages/Login/Login/PrivateRoute/PrivateRoute';
+import AddServices from './Pages/AddServices/AddServices';
+import ManageServices from './Pages/ManageServices/ManageServices';
 
 function App() {
   return (
@@ -27,6 +29,12 @@ function App() {
             <PrivateRoute path="/booking/:serviceId">
               <Booking></Booking>
             </PrivateRoute>
+            <Route path="/addServices">
+              <AddServices></AddServices>
+            </Route>
+            <Route path="/manageServices">
+              <ManageServices></ManageServices>
+            </Route>
             <Route path="*">
               <NotFound></NotFound>
             </Route>
